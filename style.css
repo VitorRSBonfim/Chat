@@ -6,11 +6,38 @@
     border: 0;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
 
 .container {
     width: 100vw;
     height: 100vh;
-    background-color: red;
+    background-color: #F4F4F4;
+    display: flex;
+
 }
 
+.container-sidechat {
+    width: auto;
+    height: 100%;
+    background-color: #fff;
+}
+
+.container-sidechat * {
+    width: auto;
+}
+
+.container-chat {
+    height: 100%;
+    overflow: auto;
+    
+}
+
+#chat {
+    overflow: auto;
+    padding: 30px;
+}
 

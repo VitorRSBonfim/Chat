@@ -10,8 +10,8 @@
 
     <?php
 
-      include "autenticacao/autenticar.php";
-
+        include "autenticacao/autenticar.php";
+        
 
       
     ?>
