@@ -2,23 +2,49 @@
 console.log("asdsd");
 
 let idUser = document.getElementById('idUser').innerHTML;
+let menuSide = document.getElementById('menuSide');
+let bntAbirMenu = document.getElementById('btnMenuSide');
+
+bntAbirMenu.addEventListener("click" ,function () {
+    menuSide.classList.toggle("oppen");
+} )
 
 idUserint = parseInt(idUser);
 
 $(document).ready(function(){
 
     $("#lista-amigos li").find("p").click(function(){
+
+
         
+        
+        $("#chat").empty();
+        $("#nome").empty();
+
         id = $(this).attr("id");
+        nome = $(this).text();
+        $("#nome").append(nome);
         console.log(id);
-      
+        console.log(nome)
         buscarMensagens();//alert(id)
+       
+        
        
 
     });
 
 
 });    
+
+function scrollBottom() {
+
+    var wtf = $('#chat');
+    var height = wtf[0].scrollHeight;
+    wtf.scrollTop(height);
+    console.log(height)
+    
+
+}
 
 function buscarMensagens() {
 
@@ -33,6 +59,8 @@ function buscarMensagens() {
         data: {id: id},
         
         success: function (response) {
+
+            scrollBottom()
             
             console.log(response);
 
@@ -55,6 +83,9 @@ function buscarMensagens() {
                         
                     </div>
                     `); 
+
+                    scrollBottom()
+                    
                        
                 } else if (response[i].ID_Mensagem_UsuarioSender == id && response[i].ID_Mensagem_UsuarioReceiver == idUserint) {
                     $("#chat").append(`
@@ -66,6 +97,8 @@ function buscarMensagens() {
                     </div>
 
                     `); 
+
+                    scrollBottom()
                 }
                 
              
@@ -79,6 +112,7 @@ function buscarMensagens() {
             
 
             setInterval(() => {
+                
                 
                 $.ajax({
                     type: "POST",
@@ -105,6 +139,8 @@ function buscarMensagens() {
                                     
                                 </div>
                                 `); 
+
+                                scrollBottom()
                                    
                             } else if (response[contDb].ID_Mensagem_UsuarioSender == id && response[contDb].ID_Mensagem_UsuarioReceiver == idUserint) {
                                 $("#chat").append(`
@@ -116,6 +152,8 @@ function buscarMensagens() {
                                 </div>
             
                                 `); 
+
+                                scrollBottom()
                             }
 
                             contDb = response.length;
@@ -130,6 +168,7 @@ function buscarMensagens() {
         },
 
     })       
+    
 
 
 }
@@ -139,16 +178,15 @@ $('#form-msg').submit(function(e){ // Pegando todo o form usando Jquery e atribu
     e.preventDefault(); // Cancelando a ação padrão (refresh da pag)
 
     msg = $('#msg').val(); // Pegando elemento e depois o value de input com id == "msg" 
-    //console.log(msg);
+    console.log(msg);
 
     $.ajax({
         type: "POST",
-        url: "enviarMensagem.php",
+        url: "sendMsg.php",
         data: {msg: msg, id: id},
         
         success: function (response) {
-            //console.log(response)
-           
+            console.log(response)
         }
         
     });
@@ -157,6 +195,9 @@ $('#form-msg').submit(function(e){ // Pegando todo o form usando Jquery e atribu
     
 
 })
+
+// Menu Side
+
 
 
 

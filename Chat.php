@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Chat</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
 
     <div class="container">
         
-        <div class="container-sidechat">
+        <div class="container-sidechat" id="menuSide">
             <nav>
                 <ul>
                     <li>
@@ -45,11 +46,33 @@
 
         <div class="container-chat">
 
+            <div>
+                <span class="material-symbols-outlined" id="btnMenuSide">
+                    arrow_forward_ios
+                </span>
+            </div>
 
+            <div class="container-chatwith">
+                <div style="border-bottom: 1px solid white;" >
+                    <h1 id="nome">
 
-            <div id="chat">
+                    </h1>
+                </div>
+            </div>
+
+            <div id="chat" class="chat">
 
                
+            </div>
+
+            <div class="container-msg">
+                <form id="form-msg" action="">
+
+                    <input type="text" class="frm-msg" name="msg" id="msg">
+
+                    <button style="cursor: pointer; " >SEND</button>
+
+                </form>
             </div>
         
 

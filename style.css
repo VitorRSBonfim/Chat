@@ -21,23 +21,150 @@ body {
 }
 
 .container-sidechat {
-    width: auto;
+    width: 0px;
     height: 100%;
     background-color: #fff;
+    overflow: hidden;
+    transition: .5s;
 }
+
+.container-sidechat.oppen {
+    width: 200px;
+    
+}
+
 
 .container-sidechat * {
     width: auto;
 }
 
 .container-chat {
-    height: 100%;
+    height: 100vh;
     overflow: auto;
-    
+    width: 100%;
 }
 
 #chat {
     overflow: auto;
-    padding: 30px;
+   
+
 }
+
+.chat {
+    height: 82%;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.container-msg {
+    height: 10%;
+    background-color: #F2F2F2;
+}
+
+#btnMenuSide {
+    color: black;
+    position: fixed;
+    cursor: pointer;
+}
+
+.container-msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#msg {
+    width: 100%;
+    
+}
+
+form {
+    display: flex;
+    width: 90%;
+    height: 70%;
+    justify-content: space-around;
+}
+
+input {
+    border-radius: 15px;
+}
+
+.container-chatwith {
+    height: 8%;
+    
+}
+
+.bg-me {
+    background-color: #C19CF0;
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+    text-align: start;
+    max-width: 300px;
+    word-break: break-all;
+    border-radius: 5px;
+    padding: 2px;
+    min-width: 200px;
+  }
+  
+  .bg-not-me {
+  
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: start;
+  
+    font-size: 20px;
+    color: black;
+    background-color: #FFFFFF;
+    max-width: 300px;
+    word-break: break-all;
+    border-radius: 5px;
+    padding: 2px;
+    min-width: 200px;
+    margin-left: 5px;
+  
+  }
+  
+  .pai-me {
+  
+    display: flex;
+    justify-content: end;
+    margin-right: 3%;
+  
+  }
+  
+  .pai-not-me {
+    display: flex;
+    justify-content: start;
+    margin-right: 3%;
+  }
+  
+  p.hora {
+    margin-bottom: 0;
+    font-size: 12px;
+    text-align: end;
+    margin-right: 5px;
+    margin-top: -15px;
+    padding-top: 16px;
+  }
+  
+  .p-me {
+    margin-bottom: 0;
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  
+  .p-not-me {
+    margin-bottom: 0;
+    margin-left: 5px;
+    font-size: 18px;
+  }
+  
+  
+  #nome {
+    padding-left: 30px;
+  }
 
