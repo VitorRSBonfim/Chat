@@ -22,7 +22,7 @@
       ?>
     </p>
 
-    <div class="container">
+    <div class="container" >
         
         <div class="container-sidechat" id="menuSide">
             <nav>

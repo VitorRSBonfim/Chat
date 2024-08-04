@@ -12,11 +12,12 @@ body {
 }
 
 
+
 .container {
     width: 100vw;
     height: 100vh;
-    background-color: #F4F4F4;
     display: flex;
+   
 
 }
 
@@ -108,14 +109,14 @@ input {
     border-radius: 5px;
     padding: 2px;
     min-width: 200px;
-  }
-  
-  .bg-not-me {
-  
+}
+
+.bg-not-me {
+
     font-size: 20px;
     margin-top: 10px;
     text-align: start;
-  
+
     font-size: 20px;
     color: black;
     background-color: #FFFFFF;
@@ -125,46 +126,95 @@ input {
     padding: 2px;
     min-width: 200px;
     margin-left: 5px;
-  
-  }
-  
-  .pai-me {
-  
+
+}
+
+.pai-me {
+
     display: flex;
     justify-content: end;
     margin-right: 3%;
-  
-  }
-  
-  .pai-not-me {
+
+}
+
+.pai-not-me {
     display: flex;
     justify-content: start;
     margin-right: 3%;
-  }
-  
-  p.hora {
+}
+
+p.hora {
     margin-bottom: 0;
     font-size: 12px;
     text-align: end;
     margin-right: 5px;
     margin-top: -15px;
     padding-top: 16px;
-  }
-  
-  .p-me {
+}
+
+.p-me {
     margin-bottom: 0;
     margin-right: 5px;
     font-size: 18px;
-  }
-  
-  .p-not-me {
+}
+
+.p-not-me {
     margin-bottom: 0;
     margin-left: 5px;
     font-size: 18px;
-  }
-  
-  
-  #nome {
-    padding-left: 30px;
-  }
+}
 
+
+#nome {
+    padding-left: 30px;
+}
+
+/*Form*/
+
+.container-form-login {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/login-bg.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.container-form {
+    min-height: 400px;
+    
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+
+.container-form form {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.container-form input {
+    background-color: #F2F2F2;
+    border-radius: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container-form button {
+    margin-top: 30px;
+    background-color: #7A4ED9;
+    color: white;
+    border-radius: 20px;
+}
