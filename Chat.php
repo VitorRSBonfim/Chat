@@ -23,33 +23,44 @@
     </p>
 
     <div class="container" >
-        
         <div class="container-sidechat" id="menuSide">
             <nav>
-                <ul>
+                <ul class="ul-img">
                     <li>
-                        <h1>Chat</h1>
+                        <div class="profile">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <input type="search" placeholder="Search" >
                     </li>
                 </ul>
                 <ul>
-                    <li>
-                        <input type="search" >
-                    </li>
+                   
                 </ul>
-                <ul id="lista-amigos">
-                    <?php
-                        include './buscarAmigos/buscarAmigos.php';
+                
+            </nav>
+
+            <div style="border: solid 1px white; margin-left: 2px; margin-right: 2px;"></div>
+                
+            <nav>
+                <ul class="ul-friends" id="lista-amigos">
+                    <?php 
+                        include_once "./buscarAmigos/buscarAmigos.php";
                     ?>
                 </ul>
+                <ul>
+                   
+                </ul>
+                
             </nav>
+
         </div>
 
         <div class="container-chat">
 
             <div>
-                <span class="material-symbols-outlined" id="btnMenuSide">
-                    arrow_forward_ios
-                </span>
+                
             </div>
 
             <div class="container-chatwith">
@@ -81,7 +92,7 @@
     </div>
 
    
-    <script src="js//jquery-3.7.1.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
     <script src="js/script.js"></script>
 
 </body>

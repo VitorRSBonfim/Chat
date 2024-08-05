@@ -5,15 +5,13 @@ let idUser = document.getElementById('idUser').innerHTML;
 let menuSide = document.getElementById('menuSide');
 let bntAbirMenu = document.getElementById('btnMenuSide');
 
-bntAbirMenu.addEventListener("click" ,function () {
-    menuSide.classList.toggle("oppen");
-} )
+
 
 idUserint = parseInt(idUser);
 
 $(document).ready(function(){
 
-    $("#lista-amigos li").find("p").click(function(){
+    $("#lista-amigos li").find("div").click(function(){
 
 
         

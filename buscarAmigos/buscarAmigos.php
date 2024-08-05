@@ -11,9 +11,20 @@
 
             echo '  
 
-                        <li><p id="'.$linha[0].'"> <i class="bi bi-person-circle"></i> '  .$linha[1].'</p></li>
+                <li>
+                   <div id='.$linha[0].' class="container-friends" >
+                        <div class="img-friend">
+                        </div>
+                        <div>
+                            <p>
+                                '.$linha[1].'
+                            </p>
+                        </div>
 
-                   ';
+                   </div>
+                </li>
+
+            ';
 
         }
 

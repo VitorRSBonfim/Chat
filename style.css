@@ -17,22 +17,19 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-   
+    max-width: 1700px;
+    margin: auto;
 
 }
 
 .container-sidechat {
-    width: 0px;
+    width: auto;
     height: 100%;
-    background-color: #fff;
-    overflow: hidden;
+    background-color: #3B3841;
     transition: .5s;
 }
 
-.container-sidechat.oppen {
-    width: 200px;
-    
-}
+
 
 
 .container-sidechat * {
@@ -218,3 +215,58 @@ p.hora {
     color: white;
     border-radius: 20px;
 }
+
+/*Side*/
+
+
+
+.img-container  {
+    width: 60px;
+   
+}
+
+.ul-img {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.profile {
+    width: 60px;
+    height: 60px;
+    background-image: url("img/image.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.container-friends {
+    display: flex;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+.img-friend {
+    width: 60px;
+    height: 60px;
+    background-image: url("img/Minions.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.ul-img input {
+    background-color: #D9D9D9;
+    margin-left: 20px;
+    padding: 4px;
+    
+}
+
+.ul-friends li p {
+    color: white;
+}
+
